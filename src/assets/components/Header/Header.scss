@@ -1,0 +1,51 @@
+@import '../variables/variables.scss';
+
+.header {
+	&__heroimage {
+		max-width: 100%;
+		height: auto;
+
+		@media screen and (min-width: 475px) {
+			border-radius: 1rem;
+		}
+	}
+
+	&__title {
+		font-family: $youngSerif;
+		font-size: 1.75rem;
+		color: $dark-charcoal;
+	}
+
+	&__description {
+		font-size: 0.9375rem;
+	}
+
+	&__preparation-time {
+		display: flex;
+		flex-direction: column;
+		padding: 1.6rem;
+		background-color: $rose-white;
+		border-radius: 1rem;
+
+		&-title {
+			margin: 0;
+			padding-bottom: 1rem;
+			font-size: 1rem;
+			color: $dark-raspberry;
+		}
+
+		&-list {
+			margin: 0;
+			padding-left: 1rem;
+			font-size: 0.9375rem;
+		}
+
+		&-item {
+			padding: 0.3rem 0.3rem 0.3rem 1rem;
+		}
+	}
+	//stylization of list numbers
+	li::marker {
+		color: $dark-raspberry;
+	}
+}

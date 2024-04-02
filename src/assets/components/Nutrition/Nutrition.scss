@@ -1,0 +1,30 @@
+@import '../variables/variables.scss';
+
+.nutrition {
+	&__title {
+		font-family: $youngSerif;
+		color: $nutmeg;
+		font-size: 1.5rem;
+	}
+
+	&__table {
+		margin-top: 0.625rem;
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+
+			td {
+				padding: 0.7rem 0.7rem 0.7rem 1.3rem;
+				border: none;
+				border-bottom: 0.125rem solid $light-grey;
+			}
+
+			.nutrition__value {
+				font-weight: 600;
+				color: $nutmeg;
+				text-align: left;
+			}
+		}
+	}
+}

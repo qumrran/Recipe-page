@@ -1,6 +1,11 @@
 import './Header.scss';
 
 const Header = ({ recipe }) => {
+  // Funkcja zmieniająca pierwszą literę na wielką
+  const capitalizeFirstLetter = (string) => {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  };
+
   return (
     <header className="header">
       <img className="header__heroimage" src={recipe.heroImage} alt="Hero Image" />
@@ -12,7 +17,7 @@ const Header = ({ recipe }) => {
         <ul className="header__preparation-time-list">
           {Object.entries(recipe.preparationTime).map(([key, value]) => (
             <li key={key} className="header__preparation-time-item">
-              <strong className="header__time-key">{key}:</strong>
+              <strong className="header__time-key">{capitalizeFirstLetter(key)}: </strong>
               <span className="header__time-value">{value}</span>
             </li>
           ))}

@@ -1,1 +1,19 @@
-/*# sourceMappingURL=Ingredients.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+.ingredients {
+  border-bottom: 0.125rem solid hsl(30, 18%, 87%);
+  padding-bottom: 1.5rem;
+}
+.ingredients__title {
+  font-family: "Young Serif", serif;
+  color: hsl(14, 45%, 36%);
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+.ingredients__list {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+.ingredients__item {
+  padding: 0.3rem 0.3rem 0.3rem 1rem;
+}/*# sourceMappingURL=Ingredients.css.map */

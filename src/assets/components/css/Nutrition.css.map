@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"Nutrition.css"}
+{"version":3,"sourceRoot":"","sources":["../variables/variables.scss","../Nutrition/Nutrition.scss"],"names":[],"mappings":"AAAQ;AAEA;ACCP;EACC,aDGW;ECFX,ODUO;ECTP;;AAGD;EACC;;AAEA;EACC;EACA;;AAEA;EACC;EACA;EACA;;AAGD;EACC;EACA,ODTK;ECUL","file":"Nutrition.css"}

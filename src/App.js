@@ -7,11 +7,13 @@ import Recipe from './assets/components/Recipe';
 
 function App() {
   return (
-    <div className="App">
-      <Header recipe={Recipe} /> 
-      <Ingredients recipe={Recipe} />
-      <Instructions recipe={Recipe} />
-      <Nutrition recipe={Recipe} />
+    <div className='background__app'>
+      <div className="App">
+        <Header recipe={Recipe} /> 
+        <Ingredients recipe={Recipe} />
+        <Instructions recipe={Recipe} />
+        <Nutrition recipe={Recipe} />
+      </div>
     </div>
   );
 }

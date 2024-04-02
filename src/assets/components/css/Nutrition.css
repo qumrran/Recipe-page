@@ -1,1 +1,24 @@
-/*# sourceMappingURL=Nutrition.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+.nutrition__title {
+  font-family: "Young Serif", serif;
+  color: hsl(14, 45%, 36%);
+  font-size: 1.5rem;
+}
+.nutrition__table {
+  margin-top: 0.625rem;
+}
+.nutrition__table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.nutrition__table table td {
+  padding: 0.7rem 0.7rem 0.7rem 1.3rem;
+  border: none;
+  border-bottom: 0.125rem solid hsl(30, 18%, 87%);
+}
+.nutrition__table table .nutrition__value {
+  font-weight: 600;
+  color: hsl(14, 45%, 36%);
+  text-align: left;
+}/*# sourceMappingURL=Nutrition.css.map */

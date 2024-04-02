@@ -1,0 +1,24 @@
+@import '../variables/variables.scss';
+
+.instructions {
+	border-bottom: 0.125rem solid $light-grey;
+	padding-bottom: 1.5rem;
+	&__title {
+		font-family: $youngSerif;
+		color: $nutmeg;
+		font-size: 1.5rem;
+		margin: 1rem 0;
+	}
+	&__list {
+		margin: 0;
+		padding-left: 1.5rem;
+	}
+	&__step {
+		padding: 0.3rem 0.3rem 0.3rem 1rem;
+	}
+
+	//stylization of list numbers
+	li::marker {
+		color: $nutmeg;
+	}
+}

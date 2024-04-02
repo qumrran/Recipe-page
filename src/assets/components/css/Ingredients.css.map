@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"Ingredients.css"}
+{"version":3,"sourceRoot":"","sources":["../variables/variables.scss","../Ingredients/Ingredients.scss"],"names":[],"mappings":"AAAQ;AAEA;ACAR;EACC;EACA;;AACA;EACC,aDCW;ECAX,ODQO;ECPP;EACA;;AAED;EACC;EACA;;AAED;EACC","file":"Ingredients.css"}

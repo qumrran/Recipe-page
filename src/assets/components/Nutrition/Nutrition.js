@@ -1,19 +1,32 @@
 import './Nutrition.scss';
+
 const Nutrition = ({ recipe }) => {
-    const { nutrition } = recipe;
-  
-    return (
-        <div className="nutrition">
-          <h3 className="nutrition__title">Nutrition</h3>
-          <div className="nutrition__list">
-            {Object.entries(nutrition).map(([key, value]) => (
-              <div key={key} className="nutrition__item">
-                <span className="nutrition__label">{key.charAt(0).toUpperCase() + key.slice(1)}:</span> <strong className="nutrition__value">{value}</strong>
-              </div>
+  const { nutrition } = recipe;
+
+  const nutritionKeys = Object.keys(nutrition).filter(
+    (key) => key !== 'description'
+  );
+
+  return (
+    <div className='nutrition'>
+      <h3 className='nutrition__title'>Nutrition</h3>
+      <p className='nutrition__description'>{nutrition.description}</p>
+      <div className='nutrition__table'>
+        <table>
+          <tbody>
+            {nutritionKeys.map((key, index) => (
+              <tr key={index}>
+                <td className='nutrition__label'>
+                  {key.charAt(0).toUpperCase() + key.slice(1)}:
+                </td>
+                <td className='nutrition__value'>{nutrition[key]}</td>
+              </tr>
             ))}
-          </div>
-        </div>
-      );
-    };
-    
-    export default Nutrition;
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+};
+
+export default Nutrition;

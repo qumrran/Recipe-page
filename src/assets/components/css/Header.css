@@ -1,1 +1,43 @@
-/*# sourceMappingURL=Header.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+.header__heroimage {
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 475px) {
+  .header__heroimage {
+    border-radius: 1rem;
+  }
+}
+.header__title {
+  font-family: "Young Serif", serif;
+  font-size: 1.75rem;
+  color: hsl(24, 5%, 18%);
+}
+.header__description {
+  font-size: 0.9375rem;
+}
+.header__preparation-time {
+  display: flex;
+  flex-direction: column;
+  padding: 1.6rem;
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 1rem;
+}
+.header__preparation-time-title {
+  margin: 0;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  color: hsl(332, 51%, 32%);
+}
+.header__preparation-time-list {
+  margin: 0;
+  padding-left: 1rem;
+  font-size: 0.9375rem;
+}
+.header__preparation-time-item {
+  padding: 0.3rem 0.3rem 0.3rem 1rem;
+}
+.header li::marker {
+  color: hsl(332, 51%, 32%);
+}/*# sourceMappingURL=Header.css.map */

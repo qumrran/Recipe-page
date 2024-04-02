@@ -7,7 +7,7 @@ const Instructions = ({ recipe }) => {
       <ol className="instructions__list">
         {recipe.instructions.map((instruction, index) => (
           <li key={index} className="instructions__step">
-            {instruction}
+            <strong className="instructions__action">{instruction.action}</strong>: {instruction.details}
           </li>
         ))}
       </ol>
